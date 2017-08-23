@@ -7,8 +7,15 @@ package pohyb.na.rece;
 
 /**
  *
- * @author Student
+ * @author DHA
  */
-public class BattleShip {
+public class BattleShip extends Ship {
+    protected int silaDel;
+
+    public BattleShip (String jmeno, int rychlost, int odolnost, int silaDel) {
+        super (jmeno, rychlost, odolnost);
+        this.silaDel = silaDel;
+    }
+    
     
 }

@@ -7,8 +7,14 @@ package pohyb.na.rece;
 
 /**
  *
- * @author Student
+ * @author DHA
  */
-public class TradeShip {
+public class TradeShip extends Ship {
+    protected int nosnost;
+
+    public TradeShip (String jmeno, int rychlost, int odolnost, int nosnost) {
+        super (jmeno, rychlost, odolnost);
+        this.nosnost = nosnost;
+    }
     
 }
