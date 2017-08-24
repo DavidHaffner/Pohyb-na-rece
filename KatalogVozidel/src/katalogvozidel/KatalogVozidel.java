@@ -7,7 +7,7 @@ package katalogvozidel;
 
 /**
  *
- * @author Student
+ * @author DHA
  */
 public class KatalogVozidel {
 

@@ -14,6 +14,10 @@ public class MotoroveVozidlo {
     protected int pocet_mist_k_sezeni;
     protected int max_rychlost;
     
+    /* prázdný konstruktor */
+    public MotoroveVozidlo () {
+    }
+    /* běžný konstruktor */
     public MotoroveVozidlo (int vykon_motoru, int pocet_mist_k_sezeni, int max_rychlost) {
         this.vykon_motoru = vykon_motoru;
         this.pocet_mist_k_sezeni = pocet_mist_k_sezeni;
