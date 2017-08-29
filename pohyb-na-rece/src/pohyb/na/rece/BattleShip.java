@@ -9,13 +9,26 @@ package pohyb.na.rece;
  *
  * @author DHA
  */
-public class BattleShip extends Ship {
-    protected int silaDel;
-
-    public BattleShip (String jmeno, int rychlost, int odolnost, int silaDel) {
-        super (jmeno, rychlost, odolnost);
-        this.silaDel = silaDel;
-    }
+public class BattleShip extends WarShip  {
+    private int pancir;
     
+    public BattleShip(String jmeno, int odolnost, int silaDel, int pancir) {
+        super(jmeno, odolnost, silaDel);
+        this.pancir = pancir;
+    }
+
+    /**
+     * @return the pancir
+     */
+    public int getPancir() {
+        return pancir;
+    }
+
+    /**
+     * @param pancir the pancir to set
+     */
+    public void setPancir(int pancir) {
+        this.pancir = pancir;
+    }
     
 }

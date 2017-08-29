@@ -7,7 +7,7 @@ package pohyb.na.rece;
 
 /**
  *
- * @author Student
+ * @author DHA
  */
 public class PohybNaRece {
 
@@ -17,6 +17,7 @@ public class PohybNaRece {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
         
     }
     
