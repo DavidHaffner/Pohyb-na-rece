@@ -14,7 +14,7 @@ import java.util.Random;
  * @author DHA
  */
 public class River {
-    /* prom. seznamReka je hlavní seznam všech lodí na řece; dále tento objekt
+    /* prom. river je hlavní seznam všech lodí na řece; dále tento objekt
     bude pracovat s objekty typu Ship */
     protected ArrayList<Ship> river;
     protected Ship ship;

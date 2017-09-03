@@ -10,7 +10,7 @@ package pohyb.na.rece;
  * @author DHA
  */
 public class Ship {
-    /* Každá Ship má jméno, údaj o rychlosti a odolnosti */ 
+    /* Každá Ship má jméno a údaj o odolnosti */ 
     private String jmeno;
     private int odolnost;
     

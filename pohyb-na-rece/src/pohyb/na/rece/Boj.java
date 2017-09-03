@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package pohyb.na.rece;
-
+import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -21,14 +21,22 @@ public class Boj {
         this.indexObrance = indexObrance;
     }
     
+    //cyklus, dokud nezůstane v river právě 1 loď = vítěz
     public void strelba (River river) {
-        indexUtocnik = random.nextInt(river.getRiverSize());
-        indexObrance = random.nextInt(river.getRiverSize());
-        //cyklus, dokud se jedna loď nezničí
         while (true) {
-            
-        }
+            indexUtocnik = random.nextInt(river.getRiverSize());
+            indexObrance = random.nextInt(river.getRiverSize());
+            Ship obrance = river.get(indexObrance);
+            river.fight(indexUtocnik, indexObrance);
+            if (obrance.getOdolnost() ==0) {
+                river.removeShip(indexObrance);
+            }
+            if (river.getRiverSize()<=1) {
+                // vypíše vítěze 
+                System.out.println("A boj vyhrává " + ((Ship)river.get(0)).toString());                  
+                return;                  
+            }
+        }    
     }
-    
 }
 
