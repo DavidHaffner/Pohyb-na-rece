@@ -26,14 +26,14 @@ public class Boj {
         while (true) {
             indexUtocnik = random.nextInt(river.getRiverSize());
             indexObrance = random.nextInt(river.getRiverSize());
-            Ship obrance = river.get(indexObrance);
+            Ship obrance = river.getArLiShip(indexObrance);
             river.fight(indexUtocnik, indexObrance);
             if (obrance.getOdolnost() ==0) {
                 river.removeShip(indexObrance);
             }
             if (river.getRiverSize()<=1) {
                 // vypíše vítěze 
-                System.out.println("A boj vyhrává " + ((Ship)river.get(0)).toString());                  
+                System.out.println("A boj vyhrává " + ((Ship)river.getArLiShip(0)).toString());
                 return;                  
             }
         }    

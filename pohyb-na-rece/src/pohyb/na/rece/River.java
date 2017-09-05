@@ -59,4 +59,7 @@ public class River {
         ((Ship)obrance).toString();
         System.out.printf(" poškozena za %d životů\n", ((WarShip)utocnik).getSilaDel());
     }
+    public Ship getArLiShip (int pom) {
+        return river.get(pom);
+    }
 }
